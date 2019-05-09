@@ -1,0 +1,89 @@
+name: scet_warn
+description: scet_warn
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  #----第三方库----#
+  cupertino_icons: ^0.1.2
+  dio: ^2.0.5    #Dart的强大Http客户端，支持拦截器，全局配置，FormData，请求取消，文件下载，超时等
+  fluro: ^1.3.4  #路由管理
+  http: ^0.12.0  #HTTP请求
+  fluttertoast: ^2.2.3  #toast提醒
+  flutter_map: ^0.4.0   #地图
+  image_picker: ^0.4.7  #拾取图像 + 拍摄照片
+  qr_flutter: ^1.1.5    #生成二维码
+  barcode_scan: ^0.0.4  #扫描二维码
+  url_launcher: ^3.0.3  #调用电话、网页...
+  flutter_picker: ^1.0.8 #时间选择器
+  json_annotation: ^2.0.0
+  flutter_screenutil: ^0.5.0 #屏幕适配
+  shared_preferences: ^0.4.1  # 本地数据缓存包
+  flutter_webview_plugin: ^0.3.1  # 全屏的webview
+  groovin_widgets: ^1.3.2  #下拉选项
+  event_bus: ^1.0.3   #传参
+  date_format: ^1.0.6 #格式化时间
+  charts_flutter: ^0.6.0 #视图库
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^1.0.0 
+  json_serializable: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+   - lib/assets/images/login_bg.png
+   - lib/assets/images/personCenter_bg.png
+   - lib/assets/images/monitorStation_bg.png
+   - lib/assets/images/StationDetails_bg.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages
